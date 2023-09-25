@@ -17,6 +17,19 @@ export default class BusinessCardForm extends Component {
                 value={this.props.name} 
                 onChange={this.handleChangeInput}
                 />
+
+                <br/>
+
+                <label htmlFor="email">Email address:</label>
+                <input 
+                    type="text"
+                    name="email"
+                    id="emailInput"
+                    value={this.props.email}
+                    onChange={this.handleChangeInput}
+                />
+
+
             </form>
         )
     }
