@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
+import PokemonFetcherPage from './pages/PokemonFetcherPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
 
       <h1>This h1 shows on every page</h1>
       <Navbar />
-      
+
       <Routes>
         <Route path="/" element={<HomePage/>} />
 
@@ -44,6 +45,10 @@ function App() {
           <Route index element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
+
+        <Route path="/pokemon" element={<PokemonFetcherPage />} />
+        <Route path="/pokemon/:pokemonId" element={<PokemonFetcherPage />} />
+        
       </Routes>
 
     </div>
